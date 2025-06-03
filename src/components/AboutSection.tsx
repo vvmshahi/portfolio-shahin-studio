@@ -40,7 +40,7 @@ export const AboutSection = () => {
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
                 <AspectRatio ratio={1}>
                   <img 
-                    src="/lovable-uploads/ca646e03-9a21-4530-bb2d-fbfd12458697.png"
+                    src="/lovable-uploads/037f5ea2-e4aa-4c46-a392-2f5fb6fe55c5.png"
                     alt="Shahin - Profile" 
                     className="object-cover w-full h-full"
                   />
