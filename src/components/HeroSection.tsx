@@ -20,7 +20,7 @@ export const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-start px-6 pt-20 relative">
       <div className="max-w-6xl mx-auto w-full animate-fade-in">
         <div className="max-w-4xl">
-          <h1 className="font-space text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight animate-slide-up">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-4 leading-tight animate-slide-up tracking-tight">
             Hello, I'm{" "}
             <br />
             <span className="text-blue-400 font-light relative hover:scale-105 transition-transform duration-300 inline-block">
@@ -29,11 +29,11 @@ export const HeroSection = () => {
             </span>
           </h1>
           
-          <h2 className="font-space text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-light animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
             Data Scientist · AI Product Builder · Vibe Coder
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl leading-relaxed font-ibm font-light animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl leading-relaxed font-light animate-slide-up" style={{ animationDelay: '0.4s' }}>
             I build intelligent tools that supercharge data workflows using AI. From Agentic AI systems 
             to frontend-trained AI models — I'm a solopreneur crafting practical, intelligent software 
             that works.
