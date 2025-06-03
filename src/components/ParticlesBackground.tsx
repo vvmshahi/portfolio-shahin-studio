@@ -1,6 +1,5 @@
 
 import { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
 
 export const ParticlesBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -94,12 +93,10 @@ export const ParticlesBackground = () => {
   }, []);
 
   return (
-    <motion.canvas
+    <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      className="fixed inset-0 pointer-events-none animate-fade-in"
+      style={{ animationDuration: '2s' }}
     />
   );
 };
