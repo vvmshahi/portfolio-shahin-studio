@@ -6,12 +6,17 @@ import { useTheme } from "@/components/ThemeProvider";
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   return (
     <div className="fixed top-6 right-6 z-50 animate-fade-in">
       <Button
         variant="outline"
         size="icon"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        onClick={toggleTheme}
         className="bg-background/80 backdrop-blur-lg border-border/50 hover:bg-accent/80 transition-all duration-300 hover:scale-105 hover:rotate-12"
       >
         <div

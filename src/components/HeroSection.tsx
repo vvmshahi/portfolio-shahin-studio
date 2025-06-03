@@ -17,29 +17,36 @@ export const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-start px-6 pt-20 relative">
-      <div className="max-w-6xl mx-auto w-full animate-fade-in">
-        <div className="max-w-4xl">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light mb-6 leading-tight animate-slide-up tracking-tight">
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center px-6 pt-20 relative"
+      style={{
+        background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #000000 100%)'
+      }}
+    >
+      <div className="max-w-6xl mx-auto w-full text-center animate-fade-in">
+        <div className="mb-16">
+          <h1 className="font-playfair text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold mb-8 leading-tight animate-slide-up tracking-tight">
             <span className="text-white">Hello, I'm</span>
             <br />
-            <span className="text-blue-400 font-light relative hover:scale-105 transition-transform duration-500 inline-block cursor-default">
+            <span 
+              className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent font-playfair hover:scale-105 transition-transform duration-500 inline-block cursor-default"
+            >
               Shahin
-              <div className="absolute -bottom-3 left-0 w-full h-1.5 bg-gradient-to-r from-blue-400 to-blue-600 animate-scale-x"></div>
             </span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mb-12 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
+          <h2 className="font-space text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mb-12 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
             Data Scientist · AI Product Builder · Vibe Coder
           </h2>
           
-          <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-4xl leading-relaxed font-light animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-4xl leading-relaxed font-light animate-slide-up mx-auto" style={{ animationDelay: '0.4s' }}>
             I build intelligent tools that supercharge data workflows using AI. From Agentic AI systems 
             to frontend-trained AI models — I'm a solopreneur crafting practical, intelligent software 
             that works.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-start gap-6 mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button 
               onClick={() => scrollToSection("projects")}
               className="bg-white hover:bg-gray-100 text-black border-0 px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
