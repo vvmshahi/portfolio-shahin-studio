@@ -72,7 +72,7 @@ export default {
 				'sunset-end': '#FFC371',
 			},
 			backgroundImage: {
-				'gradient-dark': 'linear-gradient(135deg, #0f1419 0%, #000000 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #000000 100%)',
 				'gradient-sunset': 'linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%)',
 				'gradient-blue': 'linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%)',
 			},
