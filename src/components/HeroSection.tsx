@@ -19,37 +19,36 @@ export const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center px-6 pt-20 relative"
+      className="min-h-screen flex items-center justify-start px-8 lg:px-16 pt-20 relative"
       style={{
-        background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #000000 100%)'
+        background: 'linear-gradient(180deg, #1e293b 0%, #0f172a 50%, #000000 100%)'
       }}
     >
-      <div className="max-w-6xl mx-auto w-full text-center animate-fade-in">
-        <div className="mb-16">
-          <h1 className="font-playfair text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold mb-8 leading-tight animate-slide-up tracking-tight">
-            <span className="text-white">Hello, I'm</span>
-            <br />
+      <div className="max-w-7xl w-full animate-fade-in">
+        <div className="max-w-4xl">
+          <h1 className="font-space text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-[1.1] animate-slide-up tracking-tight">
+            <span className="text-white block mb-2">Hello, I'm</span>
             <span 
-              className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent font-playfair hover:scale-105 transition-transform duration-500 inline-block cursor-default"
+              className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent font-space block hover:scale-105 transition-transform duration-500 cursor-default"
             >
               Shahin
             </span>
           </h1>
           
-          <h2 className="font-space text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mb-12 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
+          <h2 className="font-space text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-8 font-medium animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
             Data Scientist · AI Product Builder · Vibe Coder
           </h2>
           
-          <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-4xl leading-relaxed font-light animate-slide-up mx-auto" style={{ animationDelay: '0.4s' }}>
+          <p className="font-space text-lg md:text-xl text-gray-400 mb-12 max-w-3xl leading-relaxed font-normal animate-slide-up" style={{ animationDelay: '0.4s' }}>
             I build intelligent tools that supercharge data workflows using AI. From Agentic AI systems 
             to frontend-trained AI models — I'm a solopreneur crafting practical, intelligent software 
             that works.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row items-start gap-6 mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button 
               onClick={() => scrollToSection("projects")}
-              className="bg-white hover:bg-gray-100 text-black border-0 px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
+              className="bg-white hover:bg-gray-100 text-black border-0 px-8 py-3 text-lg font-semibold transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 font-space"
             >
               View My Work
             </Button>
@@ -57,7 +56,7 @@ export const HeroSection = () => {
             <Button 
               onClick={() => scrollToSection("contact")}
               variant="outline" 
-              className="border-gray-500 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm hover:scale-105 hover:-translate-y-1"
+              className="border-2 border-gray-400 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-300 bg-transparent px-8 py-3 text-lg font-semibold transition-all duration-300 rounded-lg hover:scale-105 hover:-translate-y-1 font-space"
             >
               Contact Me
             </Button>
@@ -65,7 +64,7 @@ export const HeroSection = () => {
             <Button 
               onClick={downloadResume}
               variant="ghost"
-              className="text-blue-400 hover:text-blue-300 hover:bg-blue-400/10 px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm hover:scale-105 hover:-translate-y-1"
+              className="text-blue-400 hover:text-blue-300 hover:bg-blue-400/10 px-8 py-3 text-lg font-medium transition-all duration-300 rounded-lg hover:scale-105 hover:-translate-y-1 font-space"
             >
               <Download className="w-5 h-5 mr-2" />
               Resume
@@ -73,9 +72,9 @@ export const HeroSection = () => {
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-8 lg:left-16 animate-bounce">
           <ArrowDown 
-            className="w-8 h-8 text-gray-500 cursor-pointer hover:text-blue-400 transition-all duration-300 hover:scale-125" 
+            className="w-6 h-6 text-gray-500 cursor-pointer hover:text-blue-400 transition-all duration-300 hover:scale-125" 
             onClick={() => scrollToSection("about")} 
           />
         </div>
