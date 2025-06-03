@@ -20,20 +20,20 @@ export const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-start px-6 pt-20 relative">
       <div className="max-w-6xl mx-auto w-full animate-fade-in">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-4 leading-tight animate-slide-up tracking-tight">
-            Hello, I'm{" "}
+          <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light mb-6 leading-tight animate-slide-up tracking-tight">
+            <span className="text-white">Hello, I'm</span>
             <br />
-            <span className="text-blue-400 font-light relative hover:scale-105 transition-transform duration-300 inline-block">
+            <span className="text-blue-400 font-light relative hover:scale-105 transition-transform duration-500 inline-block cursor-default">
               Shahin
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 animate-scale-x"></div>
+              <div className="absolute -bottom-3 left-0 w-full h-1.5 bg-gradient-to-r from-blue-400 to-blue-600 animate-scale-x"></div>
             </span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mb-12 font-light animate-slide-up tracking-wide" style={{ animationDelay: '0.2s' }}>
             Data Scientist · AI Product Builder · Vibe Coder
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl leading-relaxed font-light animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-4xl leading-relaxed font-light animate-slide-up" style={{ animationDelay: '0.4s' }}>
             I build intelligent tools that supercharge data workflows using AI. From Agentic AI systems 
             to frontend-trained AI models — I'm a solopreneur crafting practical, intelligent software 
             that works.
@@ -42,7 +42,7 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-start gap-6 mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button 
               onClick={() => scrollToSection("projects")}
-              className="bg-white hover:bg-gray-100 text-black border-0 px-8 py-3 text-base font-medium transition-all duration-300 rounded-sm shadow-lg hover:shadow-xl hover:scale-105"
+              className="bg-white hover:bg-gray-100 text-black border-0 px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
             >
               View My Work
             </Button>
@@ -50,7 +50,7 @@ export const HeroSection = () => {
             <Button 
               onClick={() => scrollToSection("contact")}
               variant="outline" 
-              className="border-gray-500 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent px-8 py-3 text-base font-medium transition-all duration-300 rounded-sm hover:scale-105"
+              className="border-gray-500 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm hover:scale-105 hover:-translate-y-1"
             >
               Contact Me
             </Button>
@@ -58,9 +58,9 @@ export const HeroSection = () => {
             <Button 
               onClick={downloadResume}
               variant="ghost"
-              className="text-blue-400 hover:text-blue-300 hover:bg-blue-400/10 px-8 py-3 text-base font-medium transition-all duration-300 rounded-sm hover:scale-105"
+              className="text-blue-400 hover:text-blue-300 hover:bg-blue-400/10 px-10 py-4 text-lg font-medium transition-all duration-300 rounded-sm hover:scale-105 hover:-translate-y-1"
             >
-              <Download className="w-4 h-4 mr-2" />
+              <Download className="w-5 h-5 mr-2" />
               Resume
             </Button>
           </div>
@@ -68,7 +68,7 @@ export const HeroSection = () => {
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown 
-            className="w-6 h-6 text-gray-500 cursor-pointer hover:text-blue-400 transition-colors hover:scale-125" 
+            className="w-8 h-8 text-gray-500 cursor-pointer hover:text-blue-400 transition-all duration-300 hover:scale-125" 
             onClick={() => scrollToSection("about")} 
           />
         </div>

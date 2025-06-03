@@ -12,16 +12,19 @@ export function ThemeToggle() {
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className="bg-background/80 backdrop-blur-lg border-border/50 hover:bg-accent/80 transition-all duration-300 hover:scale-105"
+        className="bg-background/80 backdrop-blur-lg border-border/50 hover:bg-accent/80 transition-all duration-300 hover:scale-105 hover:rotate-12"
       >
         <div
-          className="transition-transform duration-300"
-          style={{ transform: theme === "light" ? 'rotate(0deg)' : 'rotate(180deg)' }}
+          className="transition-all duration-500 ease-in-out"
+          style={{ 
+            transform: theme === "light" ? 'rotate(0deg) scale(1)' : 'rotate(180deg) scale(1.1)',
+            opacity: 1
+          }}
         >
           {theme === "light" ? (
-            <Moon className="h-4 w-4" />
+            <Moon className="h-4 w-4 transition-all duration-300" />
           ) : (
-            <Sun className="h-4 w-4" />
+            <Sun className="h-4 w-4 transition-all duration-300" />
           )}
         </div>
         <span className="sr-only">Toggle theme</span>
